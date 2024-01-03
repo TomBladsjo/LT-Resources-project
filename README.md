@@ -1,5 +1,3 @@
-# LT-Resources-project:
-
 # MMERB:  Multimodal Dataset for Measuring Marginalized Ethnicity Reporting Bias.
 
 ## General information
