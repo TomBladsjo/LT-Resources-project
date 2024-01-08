@@ -2,11 +2,11 @@
 
 ## General information
 
-This dataset was created as part of a project in the course LT2314. The images and original captions are taken from the Flickr8k and MS COCO datasets, and contrasting examples were created using regular expressions. The code used when creating the dataset can be found [here](https://github.com/TomBladsjo/LT-Resources-project/blob/main/notebooks/dataset_creation.ipynb). More details can be found in ---add paper!---.
+This dataset was created as part of a project in the course LT2314. The images and original captions are taken from the Flickr8k and MS COCO datasets, and contrasting examples were created using regular expressions. The code used when creating the dataset can be found in [`notebooks/dataset_creation.ipynb`](https://github.com/TomBladsjo/LT-Resources-project/blob/main/notebooks/dataset_creation.ipynb). More details can be found in [the paper](https://github.com/TomBladsjo/LT-Resources-project/blob/main/paper/lt_resources_paper.pdf).
 
 ## Download and usage
 
-Using this dataset requires access to images from the Flickr8k and MS COCO datasets. If you have access to the MLTGPU server, a folder with the relevant images can be found at `/srv/data/gussodato/images/`. Otherwise, download the Flickr8k and MS COCO datasets to the same directory and unzip them. Then run [this](https://github.com/TomBladsjo/LT-Resources-project/blob/main/code/prepare_dataset.py) script with the directory name as first argument to create a new directory with only the relevant images. By default, this directory will end up as `LT-Resources-project/datasets/images/`, but an optional argument `--image_dir` can be provided if you want to change this. 
+Using this dataset requires access to images from the Flickr8k and MS COCO datasets. If you have access to the MLTGPU server, a folder with the relevant images can be found at `/srv/data/gussodato/images/`. Otherwise, download the Flickr8k and MS COCO datasets to the same directory and unzip them. Then run the [`code/prepare_dataset.py`](https://github.com/TomBladsjo/LT-Resources-project/blob/main/code/prepare_dataset.py) script with the directory name as first argument to create a new directory with only the relevant images. By default, this directory will end up as `LT-Resources-project/datasets/images/`, but an optional argument `--image_dir` can be provided if you want to change this. 
 
 Alternatively, the dataset can be used without moving the relevant images to a specific directory. In this case, column 3 of the csv files contains the path to the image within its original folder (Flickr8k or MS COCO). 
 
